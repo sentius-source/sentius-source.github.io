@@ -550,6 +550,19 @@ footer.site-footer {
 .footer-brand img { height: 34px; margin-bottom: 14px; filter: brightness(0) invert(1); }
 .footer-brand p { color: #999; font-size: 0.9rem; max-width: 300px; }
 
+.footer-social { display: flex; gap: 12px; margin-top: 20px; }
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: var(--off-white);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.footer-social a:hover { background: var(--teal); color: var(--white); }
+
 .footer-col h4 {
   font-size: 0.8rem;
   text-transform: uppercase;
