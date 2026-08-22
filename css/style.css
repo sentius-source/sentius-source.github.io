@@ -409,8 +409,9 @@ section { padding: 76px 0; }
   padding: 14px 16px;
   margin-bottom: 20px;
 }
-.tier-meta div { display: flex; justify-content: space-between; padding: 3px 0; }
+.tier-meta div { display: grid; grid-template-columns: 108px 1fr; gap: 10px; padding: 5px 0; align-items: baseline; }
 .tier-meta div span:first-child { color: #888; }
+.tier-meta div span:last-child { text-align: right; font-weight: 500; color: var(--ink); }
 
 .tier-best {
   font-size: 0.85rem;
