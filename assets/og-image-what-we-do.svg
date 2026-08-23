@@ -1,0 +1,44 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap');
+    text { font-family: 'Poppins', sans-serif; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1a3a4a"/>
+  
+  <!-- Accent bar -->
+  <rect width="1200" height="8" fill="#3EABBF"/>
+  
+  <!-- Logo only -->
+  <image xlink:href="sentius-logo.png" x="40" y="40" width="100" height="100"/>
+  
+  <!-- Main heading -->
+  <text x="600" y="180" font-size="52" font-weight="600" fill="#ffffff" text-anchor="middle">What We Do</text>
+  
+  <!-- Three layers -->
+  <!-- Layer 3: Management -->
+  <rect x="250" y="220" width="700" height="80" rx="8" fill="#1a3a4a" stroke="#3EABBF" stroke-width="2"/>
+  <text x="600" y="240" font-size="18" font-weight="600" fill="#e8f2f7" text-anchor="middle">Management &amp; Support</text>
+  <text x="600" y="270" font-size="12" fill="#9fbfd4" text-anchor="middle">Device management • Patch management • Monitoring • Support</text>
+  
+  <!-- Arrow -->
+  <line x1="600" y1="300" x2="600" y2="320" stroke="#3EABBF" stroke-width="3"/>
+  
+  <!-- Layer 2: Security -->
+  <rect x="250" y="320" width="700" height="80" rx="8" fill="#245566"/>
+  <text x="600" y="340" font-size="18" font-weight="600" fill="#e8f2f7" text-anchor="middle">Security &amp; Protection</text>
+  <text x="600" y="370" font-size="12" fill="#9fbfd4" text-anchor="middle">Email security • Threat detection • Account protection • Web filtering</text>
+  
+  <!-- Arrow -->
+  <line x1="600" y1="400" x2="600" y2="420" stroke="#3EABBF" stroke-width="3"/>
+  
+  <!-- Layer 1: Foundation -->
+  <rect x="250" y="420" width="700" height="80" rx="8" fill="#3EABBF"/>
+  <text x="600" y="440" font-size="18" font-weight="600" fill="#0f2533" text-anchor="middle">Microsoft 365 Foundation</text>
+  <text x="600" y="470" font-size="12" fill="#0f2533" text-anchor="middle">Email • Files • Collaboration • User identity</text>
+  
+  <!-- CTA -->
+  <rect x="400" y="540" width="400" height="50" rx="8" fill="#3EABBF"/>
+  <text x="600" y="575" font-size="18" font-weight="600" fill="#1a3a4a" text-anchor="middle">Learn more</text>
+</svg>

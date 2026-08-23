@@ -1,0 +1,40 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap');
+    text { font-family: 'Poppins', sans-serif; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1a3a4a"/>
+  
+  <!-- Accent bar -->
+  <rect width="1200" height="8" fill="#3EABBF"/>
+  
+  <!-- Logo only -->
+  <image xlink:href="sentius-logo.png" x="40" y="40" width="100" height="100"/>
+  
+  <!-- Main heading -->
+  <text x="600" y="180" font-size="52" font-weight="600" fill="#ffffff" text-anchor="middle">Proven Results</text>
+  
+  <!-- Case 1 -->
+  <rect x="100" y="250" width="400" height="120" rx="8" fill="#245566"/>
+  <text x="120" y="280" font-size="18" font-weight="600" fill="#3EABBF">Health &amp; Social Care</text>
+  <text x="120" y="315" font-size="36" font-weight="600" fill="#ffffff">43.75% → 90.48%</text>
+  <text x="120" y="350" font-size="14" fill="#9fbfd4">+46.73 percentage points</text>
+  
+  <!-- Case 2 -->
+  <rect x="700" y="250" width="400" height="120" rx="8" fill="#245566"/>
+  <text x="720" y="280" font-size="18" font-weight="600" fill="#3EABBF">Professional Services</text>
+  <text x="720" y="315" font-size="36" font-weight="600" fill="#ffffff">45.13% → 82.31%</text>
+  <text x="720" y="350" font-size="14" fill="#9fbfd4">+37.18 percentage points</text>
+  
+  <!-- Bottom text -->
+  <text x="600" y="430" font-size="20" fill="#cccccc" text-anchor="middle">Real clients. Real improvements. Secure scores transformed.</text>
+  
+  <!-- CTA -->
+  <rect x="400" y="480" width="400" height="50" rx="8" fill="#3EABBF"/>
+  <text x="600" y="515" font-size="18" font-weight="600" fill="#1a3a4a" text-anchor="middle">See how we did it</text>
+  
+  <!-- Footer -->
+  <text x="600" y="600" font-size="14" fill="#999999" text-anchor="middle">sentius.co.uk/case-studies</text>
+</svg>

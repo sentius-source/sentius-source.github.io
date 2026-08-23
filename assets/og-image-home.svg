@@ -1,0 +1,29 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap');
+    text { font-family: 'Poppins', sans-serif; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1a3a4a"/>
+  
+  <!-- Accent bar -->
+  <rect width="1200" height="8" fill="#3EABBF"/>
+  
+  <!-- Logo only -->
+  <image xlink:href="sentius-logo.png" x="40" y="40" width="100" height="100"/>
+  
+  <!-- Main heading -->
+  <text x="600" y="200" font-size="56" font-weight="600" fill="#ffffff" text-anchor="middle">Microsoft 365 is a</text>
+  <text x="600" y="270" font-size="56" font-weight="600" fill="#3EABBF" text-anchor="middle">foundation, not security</text>
+  
+  <!-- Subheading -->
+  <text x="600" y="360" font-size="24" fill="#cccccc" text-anchor="middle">Get your security right. No jargon. Direct access.</text>
+  
+  <!-- CTA -->
+  <rect x="400" y="420" width="400" height="60" rx="8" fill="#3EABBF"/>
+  <text x="600" y="458" font-size="20" font-weight="600" fill="#1a3a4a" text-anchor="middle">Book a free security review</text>
+  
+  <!-- Footer branding -->
+  <text x="600" y="600" font-size="14" fill="#999999" text-anchor="middle">sentius.co.uk</text>
+</svg>
