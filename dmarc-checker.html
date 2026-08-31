@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Free DMARC checker tool. Analyze your domain's email authentication and security posture instantly.">
+<meta property="og:title" content="DMARC Checker | Sentius">
+<meta property="og:description" content="Free tool to check your domain's DMARC, SPF, and DKIM records">
+<meta property="og:url" content="https://sentius.co.uk/dmarc-checker.html">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://sentius.co.uk/dmarc-checker.html">
+<title>Free DMARC Checker | Sentius</title>
+<link rel="icon" href="assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .dmarc-intro {
+    padding: 60px 0;
+  }
+  .dmarc-intro h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a3a4a;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  .dmarc-intro p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .dmarc-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+  }
+  .benefit-card {
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #3EABBF;
+  }
+  .benefit-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a3a4a;
+    margin-bottom: 12px;
+  }
+  .benefit-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  .dmarc-tool-section {
+    padding: 60px 0;
+    background: #f5f5f5;
+  }
+  .dmarc-tool-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a3a4a;
+    margin-bottom: 50px;
+  }
+  .dmarc-tool-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .dmarc-cta-section {
+    padding: 60px 0;
+  }
+  .dmarc-cta-box {
+    background: linear-gradient(135deg, #3EABBF 0%, #2a8fa3 100%);
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+  }
+  .dmarc-cta-box h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .dmarc-cta-box p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.95;
+  }
+  .dmarc-cta-box .btn {
+    background: white;
+    color: #3EABBF;
+    font-weight: 700;
+    padding: 14px 35px;
+    font-size: 1rem;
+  }
+  .dmarc-cta-box .btn:hover {
+    background: #f5f5f5;
+  }
+  @media (max-width: 768px) {
+    .dmarc-intro h2,
+    .dmarc-tool-section h2,
+    .dmarc-cta-box h2 {
+      font-size: 1.4rem;
+    }
+    .dmarc-tool-container {
+      padding: 20px;
+    }
+    .dmarc-cta-box {
+      padding: 30px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo-link"><img src="assets/logo.png" alt="Sentius logo"></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://outlook.office365.com/owa/calendar/Sentius@sentius.co.uk/bookings/" target="_blank" rel="noopener" class="btn btn-primary">Book a free security review</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>DMARC Checker</h1>
+      <p>Verify your domain's email authentication and security in seconds</p>
+    </div>
+  </section>
+
+  <section class="dmarc-intro">
+    <div class="container">
+      <h2>What is DMARC?</h2>
+      <p>DMARC (Domain-based Message Authentication, Reporting and Conformance) is an email authentication protocol that helps protect your domain from email spoofing and phishing attacks. It works alongside SPF and DKIM to ensure only authorized mail servers can send emails on behalf of your domain.</p>
+      
+      <div class="dmarc-benefits">
+        <div class="benefit-card">
+          <h3>Prevent Spoofing</h3>
+          <p>Stop attackers from sending emails that appear to come from your domain, protecting your reputation and customers.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Improve Deliverability</h3>
+          <p>Proper DMARC configuration ensures your legitimate emails reach inboxes instead of spam folders.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Compliance Ready</h3>
+          <p>DMARC is a requirement for many compliance standards including Cyber Essentials and industry best practices.</p>
+        </div>
+      </div>
+
+      <p><strong>Use the tool below to check your domain's DMARC configuration now. It's free and takes just seconds.</strong></p>
+    </div>
+  </section>
+
+  <section class="dmarc-tool-section">
+    <div class="container">
+      <h2>Check Your Domain</h2>
+      <div class="dmarc-tool-container">
+        <script data-type="domain-analyzer-container" src="https://sentius.powerdmarc.com/analyze/1e80qpwd5wkg6d9n/light_mode"></script>
+      </div>
+    </div>
+  </section>
+
+  <section class="dmarc-cta-section">
+    <div class="container">
+      <div class="dmarc-cta-box">
+        <h2>Found Issues? We Can Help</h2>
+        <p>If your DMARC check reveals authentication gaps or configuration issues, our team can help you fix them quickly. We'll review your results and implement the right solution for your organization.</p>
+        <a href="https://outlook.office365.com/owa/calendar/Sentius@sentius.co.uk/bookings/" target="_blank" rel="noopener" class="btn">Book Your Free Security Review</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Sentius logo">
+        <p>Microsoft 365 security and managed services for organisations that handle sensitive data. Serving the Fens and globally.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/chris-warner-75b22317b/" target="_blank" rel="noopener" aria-label="Sentius on LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="what-we-do.html">What We Do</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:07598879755">07598 879755</a></li>
+          <li><a href="mailto:hello@sentius.co.uk">hello@sentius.co.uk</a></li>
+          <li>Serving the Fens and globally</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Sentius. All rights reserved.</span>
+      <span>Microsoft 365 Security &amp; Managed Services</span>
+      <a href="#" data-cookie-settings>Cookie Settings</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/cookie-consent.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
